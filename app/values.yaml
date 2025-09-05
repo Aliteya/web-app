@@ -47,8 +47,11 @@ securityContext:
   #   drop:
   #   - ALL
   # readOnlyRootFilesystem: true
-  runAsNonRoot: true
-  runAsUser: 1000
+  # runAsNonRoot: true
+  # runAsUser: 1000
+  runAsUser: 101
+  runAsGroup: 101
+  fsGroup: 101
 
 # This is for setting up a service more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/
 service:
