@@ -1,10 +1,17 @@
 # config -- The [polaris configuration](https://github.com/FairwindsOps/polaris#configuration). If not provided then the [default](https://github.com/FairwindsOps/polaris/blob/master/examples/config.yaml) config from Polaris is used.
 config: 
   checks:
-    cpuRequestsMissing: danger
-    memoryRequestsMissing: danger
-    cpuLimitsMissing: danger
-    memoryLimitsMissing: danger
+    cpuRequestsMissing: warning
+    memoryRequestsMissing: warning
+    cpuLimitsMissing: warning
+    memoryLimitsMissing: warning
+  namespaces:
+    app:
+      checks:
+        cpuRequestsMissing: danger
+        memoryRequestsMissing: danger
+        cpuLimitsMissing: danger
+        memoryLimitsMissing: danger
   exemptions:
     - controllerNames:
       - "*"
