@@ -12,15 +12,15 @@ config:
         memoryRequestsMissing: danger
         cpuLimitsMissing: danger
         memoryLimitsMissing: danger
-  exemptions:
-    - controllerNames:
-      - "*"
-    - namespace: kube-system
-      rules:
-        - cpuRequestsMissing
-        - cpuLimitsMissing
-        - memoryRequestsMissing
-        - memoryLimitsMissing
+  # exemptions:
+  #   - controllerNames:
+  #     - "*"
+  #   - namespace: kube-system
+  #     rules:
+  #       - cpuRequestsMissing
+  #       - cpuLimitsMissing
+  #       - memoryRequestsMissing
+  #       - memoryLimitsMissing
 
 
 # configUrl -- Use a config from an accessible URL source.  NOTE: `config` & `configUrl` are mutually exclusive.  Setting `configURL` will take precedence over `config`.  Only one may be used.
