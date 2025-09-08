@@ -31,7 +31,7 @@ configUrl: null
 additionalExemptions: null
 
 # mergeConfig -- If the config should be merged with the default config. See https://github.com/FairwindsOps/polaris/pull/1075
-mergeConfig: false
+mergeConfig: true
 
 
 image:
