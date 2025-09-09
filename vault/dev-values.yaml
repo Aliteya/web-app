@@ -327,7 +327,7 @@ injector:
 
   # Should the injector pods run on the host network (useful when using
   # an alternate CNI in EKS)
-  hostNetwork: false
+  hostNetwork: true
 
   # Injector service specific config
   service:
