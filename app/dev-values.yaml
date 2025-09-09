@@ -38,6 +38,9 @@ podAnnotations:
   prometheus.io/scrape: 'true'
   prometheus.io/port: '8000'
   prometheus.io/path: '/metrics'
+  vault.hashicorp.com/agent-inject: "true"
+  vault.hashicorp.com/role-name: "trainee_role"
+  vault.hashicorp.com/agent-inject-secret-config.env: "kv/webapp/dev"
 # This is for setting Kubernetes Labels to a Pod.
 # For more information checkout: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 podLabels: {}
