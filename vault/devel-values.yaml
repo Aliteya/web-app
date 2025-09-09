@@ -1046,7 +1046,7 @@ ui:
   # The service should only contain selectors for active Vault pod
   activeVaultPodOnly: false
   serviceType: "NodePort"
-  serviceNodePort: 8200
+  serviceNodePort: 30456
   externalPort: 8200
   targetPort: 8200
 
